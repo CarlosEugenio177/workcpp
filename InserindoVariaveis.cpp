@@ -9,7 +9,7 @@ cout << "Digite o valor de a: ";
 cin >> a;
 cout << "Digite o valor de b: ";
 cin >> b;
-    std::cout << "O valor de a + b: " << a+b << std::endl;
+    std::cout << "O valor de a + b é: " << a+b << std::endl;
     return 0;
 
 }
