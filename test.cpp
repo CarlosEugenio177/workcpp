@@ -2,5 +2,10 @@
 using namespace std;
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+int a = 7;
+int b = 7;
+int day = a+b;
+string month = "Janeiro";
+string year = "2026";
+    std::cout << "Hello, World! hoje é " << day << " de " << month << " de " << year << std::endl;
 }
