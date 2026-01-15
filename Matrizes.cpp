@@ -7,12 +7,23 @@ int main() {
    int numlinhas; 
    cin >> numlinhas >> numcolunas;
 
-   int **matrix = new int*[numlinhas]; // aloca as linhas
+   int** matrix = new int*[numlinhas]; // aloca as linhas
 
    for (int i = 0; i < numlinhas; i++){ // aloca as colunas
    matrix[i] = new int[numcolunas];
    }
 
-   matrix[0][0] = 12; // atribui valor a posicao [0][0]
+    for (int i = 0; i < numlinhas; i++){ // preenchendo a matriz
+      for (int j = 0; j <numcolunas; j++){
+         matrix[i][j] = i + j;
+      }
+   }
+
+   for (int i = 0; i < numlinhas; i++){ // imprimindo a matriz
+      for (int j = 0; j <numcolunas; j++){
+         cout << matrix[i][j];
+      }
+      cout << "\n";
+   }
    return 0;
 }
