@@ -3,12 +3,16 @@
 using namespace std;
 
 int main() {
-    int tamanho;
-    cout << "Tamanho do vetor:" << endl;
-    cin >> tamanho;
-    int *vetor = new int[tamanho];
-    vetor[0] = 10;
-    vetor[1] = 20;
-    cout << "Vetor:" << vetor[0] << "," << vetor[1] << endl;
-    return 0;
+   int numcolunas;
+   int numlinhas; 
+   cin >> numlinhas >> numcolunas;
+
+   int **matrix = new int*[numlinhas]; // aloca as linhas
+
+   for (int i = 0; i < numlinhas; i++){ // aloca as colunas
+   matrix[i] = new int[numcolunas];
+   }
+
+   matrix[0][0] = 12; // atribui valor a posicao [0][0]
+   return 0;
 }
