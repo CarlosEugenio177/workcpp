@@ -15,7 +15,7 @@ int main() {
 
     for (int i = 0; i < numlinhas; i++){ // preenchendo a matriz
       for (int j = 0; j <numcolunas; j++){
-         matrix[i][j] = i + j;
+         matrix[i][j] = i + j; 
       }
    }
 
