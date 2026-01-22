@@ -25,5 +25,10 @@ int main() {
       }
       cout << "\n";
    }
+   for (int i = 0; i < numlinhas; i++) {
+    delete[] matrix[i];
+   }
+   delete[] matrix;
+
    return 0;
 }
